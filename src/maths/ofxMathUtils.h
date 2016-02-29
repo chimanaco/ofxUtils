@@ -1,14 +1,12 @@
 //
-//  ofxEasyMathUtil.h
+//  ofxMathUtil.h
 //
 //  Created by Yasushi Harada
 //
 //
 
-#ifndef __ofxEasyMathUtil__
-#define __ofxEasyMathUtil__
-
-#include "ofMain.h"
+#ifndef __ofxMathUtil__
+#define __ofxMathUtil__
 
 //--------------------------------------------------------------
 inline string addZeroToSingleDegit(int num){
@@ -20,7 +18,7 @@ inline string addZeroToSingleDegit(int num){
 }
 
 //--------------------------------------------------------------
-inline int getRandomInt(int num){
+inline int randomInt(int num){
     int randomNum = floor(ofRandom(num));
     return randomNum;
 }
@@ -74,5 +72,5 @@ inline ofVec3f latLonToSphericalCoordinates(float latitude, float longitude, flo
 }
 
 
-#endif /* defined(__ofxEasyMathUtil__) */
+#endif /* defined(__ofxMathUtil__) */
 
